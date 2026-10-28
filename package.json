@@ -1,0 +1,46 @@
+{
+  "name": "eslint-config-lucastakeo",
+  "version": "0.1.0",
+  "description": "Adaptable flat ESLint configuration inspired by Rocketseat's JavaScript style.",
+  "author": "Lucas Takeo Mori",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucastakeo-dev/eslint-config-takeo.git"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./react": {
+      "types": "./src/react.d.ts",
+      "import": "./src/react.js"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "eslint": ">=9 <11"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.39.0 || ^10.0.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.62.0"
+  },
+  "scripts": {
+    "check": "node --check src/index.js && node --check src/react.js"
+  }
+}
