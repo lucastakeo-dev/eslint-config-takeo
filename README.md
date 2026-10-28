@@ -58,16 +58,6 @@ alterar esses escopos. Em projeto somente JavaScript, passe `typescript: false`.
 As opções de estilo são `printWidth`, `tabWidth`, `singleQuote`,
 `trailingComma`, `arrowParens`, `semi` e `endOfLine`.
 
-## Publicação
-
-Há duas formas de distribuição:
-
-1. **Pelo GitHub:** qualquer consumidor com acesso instala o repositório Git na
-   tag. Não exige publicar no registro npm.
-2. **Pelo registro npm:** depois de entrar no npm com `npm login`, publique com
-   `npm publish`. A partir daí, consumidores instalam com
-   `npm install --save-dev eslint-config-lucastakeo`.
-
 ## Créditos
 
 As opções padrão de estilo foram adaptadas da configuração pública
